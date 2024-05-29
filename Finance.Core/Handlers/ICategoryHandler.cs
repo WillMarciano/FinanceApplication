@@ -4,8 +4,8 @@ using Finance.Core.Responses;
 
 namespace Finance.Core.Handlers
 {
-    public interface ICategoryHandler : IHandler<CreateCategoryRequest, Category>
+    public interface ICategoryHandler : IHandler<CreateCategoryRequest, UpdateCategoryRequest, DeleteCategoryRequest, GetCategoryByIdRequest, Category>
     {
-        Task<PagedResponse<List<Category?>>> GetAllAsync(GetAllCategoryRequest request);
+        Task<PagedResponse<List<Category>?>> GetAllAsync(GetAllCategoriesRequest request);
     }
 }

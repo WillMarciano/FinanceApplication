@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Finance.Core.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Finance.Core.Requests.Transactions
 {
@@ -10,6 +11,9 @@ namespace Finance.Core.Requests.Transactions
         [Required(ErrorMessage = "{0} inválido")]
         public string Title { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "{0} inválido")]
+        public ETransactionType Type { get; set; }
+
         [Display(Name = "Valor")]
         [Required(ErrorMessage = "{0} inválido")]
         public decimal Amount { get; set; }
@@ -20,6 +24,6 @@ namespace Finance.Core.Requests.Transactions
 
         [Display(Name = "Valor")]
         [Required(ErrorMessage = "{0} inválida")]
-        public DateTime? PaidOrRequestAt { get; set; }
+        public DateTime? PaidOrReceivedAt { get; set; }
     }
 }

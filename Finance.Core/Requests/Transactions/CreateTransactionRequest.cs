@@ -18,6 +18,6 @@ namespace Finance.Core.Requests.Transactions
         public long CategoryId { get; set; }
 
         [Required(ErrorMessage = "Data inválida")]
-        public DateTime? PaidOrReceiveAt { get; set; }
+        public DateTime? PaidOrReceivedAt { get; set; }
     }
 }
