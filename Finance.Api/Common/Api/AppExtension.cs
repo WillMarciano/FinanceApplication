@@ -7,7 +7,8 @@ namespace Finance.Api.Common.Api
         public static void ConfigureDevEnvironment(this WebApplication app)
         {
             app.UseSwagger();
-            app.UseSwagger();
+            app.UseSwaggerUI();
+
             // app.MapSwagger().RequireAuthorization();
         }
     }
