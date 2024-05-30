@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Api", "Finance.Api\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Core", "Finance.Core\Finance.Core.csproj", "{4D2199BD-5B3E-42E8-82DF-03089A374007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.App", "Finance.App\Finance.App.csproj", "{2F5DE8F0-6D46-4194-B3ED-57190E7DC591}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Web", "Finance.Web\Finance.Web.csproj", "{2FB2AE7D-0D67-46A8-AFA8-9A5F9107EE31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{4D2199BD-5B3E-42E8-82DF-03089A374007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D2199BD-5B3E-42E8-82DF-03089A374007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D2199BD-5B3E-42E8-82DF-03089A374007}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F5DE8F0-6D46-4194-B3ED-57190E7DC591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F5DE8F0-6D46-4194-B3ED-57190E7DC591}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F5DE8F0-6D46-4194-B3ED-57190E7DC591}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F5DE8F0-6D46-4194-B3ED-57190E7DC591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB2AE7D-0D67-46A8-AFA8-9A5F9107EE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB2AE7D-0D67-46A8-AFA8-9A5F9107EE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB2AE7D-0D67-46A8-AFA8-9A5F9107EE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB2AE7D-0D67-46A8-AFA8-9A5F9107EE31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
