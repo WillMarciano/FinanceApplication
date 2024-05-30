@@ -10,9 +10,10 @@ namespace Finance.Api.Endpoints
         {
             var endpoints = app.MapGroup("");
 
-            endpoints.MapGroup("/")
+            endpoints.MapGroup("v1/HealthCheck")
                 .WithTags("Health Check")
-                .MapGet("/", () => new { message = "OK" });
+                .MapGet("", () => new { message = "OK" })
+                .WithSummary("Verifica Status Api");
 
             endpoints.MapGroup("v1/categories")
                 .WithTags("Categories")

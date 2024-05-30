@@ -3,7 +3,6 @@ using Finance.Core.Handlers;
 using Finance.Core.Models;
 using Finance.Core.Requests.Categories;
 using Finance.Core.Responses;
-using Microsoft.Extensions.Configuration;
 
 namespace Finance.Api.Endpoints.Categories
 {
