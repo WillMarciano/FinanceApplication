@@ -1,16 +1,29 @@
 ﻿@inherits LayoutComponentBase
-
-<MudThemeProvider IsDarkMode="true"/>
+<MudThemeProvider IsDarkMode="true" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
 <MudLayout>
     <MudAppBar>
-        Finance
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        Finance App
     </MudAppBar>
+    <MudDrawer @bind-Open="@_drawerOpen">
+        <MudList>
+            <MudListItem Href="/" Icon="@Icons.Material.Filled.Home">Home</MudListItem>
+            <MudListItem Href="/categorias" Icon="@Icons.Material.Filled.Category">Categorias</MudListItem>
+        </MudList>
+    </MudDrawer>
     <MudMainContent>
-        <MudContainer>
-            @Body
-        </MudContainer>
+        @Body
     </MudMainContent>
 </MudLayout>
+
+@code {
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

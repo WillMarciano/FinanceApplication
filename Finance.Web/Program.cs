@@ -1,4 +1,7 @@
+using Finance.Core;
+using Finance.Core.Handlers;
 using Finance.Web;
+using Finance.Web.Handlers;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
@@ -9,6 +12,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddMudServices();
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddHttpClient(WebConfiguration.HttpClientName, opt => { opt.BaseAddress = new Uri(Configuration.BackendUrl); });
+
+builder.Services.AddTransient<ICategoryHandler, CategoryHandler>();
 
 await builder.Build().RunAsync();
